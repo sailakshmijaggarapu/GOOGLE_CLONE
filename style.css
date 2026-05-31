@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    font-family:'Segoe UI',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #312e81
+    );
+}
+
+/* Stars Background */
+
+.stars{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:
+        radial-gradient(white 1px, transparent 1px);
+    background-size:40px 40px;
+    opacity:0.4;
+}
+
+/* Main Container */
+
+.container{
+    text-align:center;
+    z-index:10;
+}
+
+/* Logo */
+
+.logo{
+    font-size:100px;
+    font-weight:bold;
+    margin-bottom:30px;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.5),
+        0 0 20px rgba(255,255,255,.3);
+}
+
+/* Search Card */
+
+.search-box{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+
+    padding:30px;
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Search Bar */
+
+input{
+    width:600px;
+    max-width:90%;
+    padding:15px;
+
+    border:none;
+    border-radius:30px;
+
+    font-size:18px;
+    outline:none;
+}
+
+input:focus{
+    box-shadow:
+        0 0 15px #60a5fa;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-top:25px;
+}
+
+button{
+    padding:12px 25px;
+    margin:8px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#3b82f6;
+    color:white;
+
+    cursor:pointer;
+    font-size:16px;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 10px #3b82f6,
+        0 0 25px #3b82f6;
+}
+
+/* Footer */
+
+.footer{
+    color:white;
+    margin-top:25px;
+    font-size:18px;
+    letter-spacing:1px;
+}
